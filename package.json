@@ -1,18 +1,17 @@
 {
   "name": "working-enviroment-task2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "lint": "eslint .",
-    "build": "webpack --mode production",
-    "test": "jest"
+    "build": "babel src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Svift87/working-enviroment-task2.git"
+    "url": "git+https://github.com/Svift87/working-enviroment-task2.git"
   },
-  "author": "eugene",
+  "author": "Svift",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Svift87/working-enviroment-task2/issues"
@@ -21,25 +20,6 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.0",
-    "eslint": "^5.12.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.15.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "jest": "^23.6.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
-  },
-  "dependencies": {},
-  "description": "\"Browser based game\"",
-  "keywords": [
-    "game"
-  ]
+    "@babel/preset-env": "^7.3.1"
+  }
 }
